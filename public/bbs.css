@@ -1,0 +1,111 @@
+.cover {
+    border-bottom: 1px solid #c0c0c0;
+    margin: 3px;
+}
+
+.name {
+    font-weight: bold;
+    width: 8em;
+}
+
+.mes {
+    margin-left: 30px;
+}
+
+.timestamp {
+    margin-left: 10px;
+    font-size: 0.9em;
+    color: gray;
+}
+
+button {
+    margin-left: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+#theme-toggle {
+    position: fixed;  /* ページ上に固定 */
+    top: 10px;        /* 上から10pxの位置 */
+    right: 10px;      /* 右から10pxの位置 */
+    padding: 10px 20px;  /* ボタンのパディング */
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;    /* 他の要素より前面に表示 */
+}
+
+#theme-toggle:hover {
+    background-color: #f0f0f0;  /* ホバー時の背景色 */
+}
+
+#content {
+    width: 65%;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+/* モバイル向けレイアウト */
+
+#layout-toggle {
+    top: 60px;       /* 上からの距離 */
+    right: 10px;     /* 右からの距離 */
+    padding: 10px 15px; /* ボタンの余白 */
+    background-color: #007BFF; /* ボタンの背景色 */
+    color: white;    /* テキストの色 */
+    border: none;    /* 枠線を消す */
+    border-radius: 5px; /* 角を丸くする */
+    cursor: pointer; /* ポインタを表示 */
+}
+
+/* 基本スタイルはそのまま */
+
+/* モバイルモードのスタイル調整 */
+
+body.mobile-mode #layout-toggle:hover {
+    background-color: #0056b3; /* ホバー時の色変更 */
+}
+body.mobile-mode #theme-toggle {
+    width: auto;    /* ボタン幅を自動調整 */
+    margin: 5px 10px; /* 少し余白を追加 */
+    font-size: 14px; /* ボタン文字を小さめに */
+    position: relative; /* 配置を通常フローに */
+}
+
+body.mobile-mode div {
+    display: flex;
+    flex-direction: column; /* フォームを縦並びに */
+    align-items: center; /* 中央揃え */
+}
+
+body.mobile-mode input {
+    width: 90%; /* 入力欄を広げる */
+    margin: 5px 0; /* 各入力欄に余白を追加 */
+    font-size: 16px;
+}
+
+body.mobile-mode label {
+    width: 90%;
+    text-align: left; /* ラベルを左揃え */
+    margin: 5px 0;
+}
+
+body.mobile-mode #bbs {
+    width: 100%;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
